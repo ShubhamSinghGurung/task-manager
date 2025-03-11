@@ -1,0 +1,126 @@
+/* Default Light Mode */
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  transition: background 0.3s ease-in-out;
+}
+
+/* Dark Mode for Entire Page */
+.dark-mode {
+  background: #222;
+  color: white;
+}
+
+/* Task Manager Box */
+.container {
+  width: 450px;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: black;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Dark Mode - Task Manager Box */
+.dark-mode .container {
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+/* Input Field */
+input {
+  width: 90%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  margin-bottom: 15px;
+}
+
+/* Buttons */
+button {
+  padding: 12px 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 5px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* Add Task Button */
+button.add-task {
+  background-color: #28a745;
+  color: white;
+}
+
+/* Filter Buttons */
+button.filter-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+button.filter-btn.completed {
+  background-color: #17a2b8;
+}
+
+button.filter-btn.pending {
+  background-color: #ffc107;
+  color: black;
+}
+
+/* Task List */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+li:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(1.02);
+}
+
+/* Completed Task */
+.completed {
+  text-decoration: line-through;
+  color: #ccc;
+}
+
+/* Delete Button */
+.task-actions {
+  background-color: #dc3545;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.task-actions:hover {
+  background-color: #c82333;
+}
